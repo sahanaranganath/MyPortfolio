@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SahanaRanganath</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+        <script>
+            function clickAlert() {
+                prompt("Do you agree with the terms and conditions?")
+              alert("Details are sent. We will get back to you soon!");
+          }
+          /*!
+* Start Bootstrap - Agency v7.0.6 (https://startbootstrap.com/theme/agency)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+*/
+//
+// Scripts
+// 
+
+window.addEventListener('DOMContentLoaded', event => {
+
+    // Navbar shrink function
+    var navbarShrink = function () {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink')
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink')
+        }
+
+    };
+
+    // Shrink the navbar 
+    navbarShrink();
+
+    // Shrink the navbar when page is scrolled
+    document.addEventListener('scroll', navbarShrink);
+
+    // Activate Bootstrap scrollspy on the main nav element
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: 74,
+        });
+    };
+
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+
+});
+
+          </script>
+          
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <p class="navbar-brand" href="#page-top">Sahana Ranganath </p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive" >
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Intrests</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading" style="color: rgb(36, 34, 34);">Bonjour!!</div>
+                <div class="masthead-heading text-uppercase" style="color: rgb(36, 34, 34);">I'm Sahana!  </div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#about">More about me</a>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                     <h2 class="section-heading text-uppercase" style="text-align: center; color: rgb(236, 169, 24) ;">About</h2>
+                    </div>
+                     <div class="container1">
+                        <img class="face" src="domoimage.jpg" alt="..." />
+                   
+                        <div class="title">
+                            <h1 class="name" style="margin-left: 11%;">SAHANA  <span class="coral">RANGANATH</span> </h1><br>
+                            <div class="qualification" style="margin-left: 11%;">Engineering student currently completing her degree in Bachelor of Computer 
+                                Science and Engineering. Good knowledge of programming languages such as
+                                 C, C++ and Java. I am aspired to be a
+                                 software engineer dedicated to 
+                                implementing cutting edge technologies to innovative organizations. I also have great 
+                                logical reasoning ability, leadership qualities, communication skills and managerial skills.
+                            I constantly try to keep myself updated with the recent technological trends and belive in learning new concepts everyday.
+                        "Treat People With Kindness" and "Today is never too late to be brand new" are the quotes that keep me motivated.</div>
+                                <br>
+                                <div style="margin-left: 11%;"> Contact:<br>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                           
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a></div>
+                               
+                            </div>
+
+                     </div>
+ 
+        </section>
+         <!-- education-->
+         <section class="page-section bg-light"  id="education">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="text-align: center; color: rgb(236, 169, 24) ;">Education</h2>
+                <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->    
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="11.jpg" alt="..." />
+                            <h4>JSS Public School</h4>
+                            <p class="text-muted">Primary Education<br>CBSE</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="21.jpg" alt="..." />
+                            <h4>Jain College</h4>
+                            <p class="text-muted">Secondary Education<br> PCMB</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="31.jpeg" alt="..." />
+                            <h4>JSS Academy of Technical Education</h4>
+                            <p class="text-muted">BE in Computer Science</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                </div>-->
+            </div>
+        </section>
+        <!-- Skills-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="text-align: center; color: rgb(236, 169, 24) ;">Skills</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                
+                HTML/CSS
+                <div class="progress">
+                   <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">55%</div>
+                  </div>
+                  C/C++
+                  <div class="progress">
+                   <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+                  Java 
+                  <div class="progress">
+                   <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                  </div>
+                  Dicrete Mathematics
+                  <div class="progress">
+                   <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">95%</div>
+                  </div>
+                  UI/UX Designing
+                  <div class="progress">
+                     <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                    </div>
+                    Problem Solving
+                    <div class="progress">
+                     <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                   Logical Reasoning
+                    <div class="progress">
+                     <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    
+            </div>
+        </section>
+        <!-- My intrests Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="text-align: center; color: rgb(236, 169, 24) ;">My Interests</h2>
+                    <h3 class="section-subheading text-muted">Here are some of the technologies that always keep me inspired and motivated:</h3>
+                </div>
+                
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                      <h5 class="card-title">Artificial Intelligence</h5>
+                      <p class="card-text">Artificial Intelligence (AI) is a trending technology that takes first place in the list of top 10 latest technologies in computer science of 2021. AI technology involves machine intelligence, which is as smart and intelligent as the human brain and reacts like humans. 
+
+                        Today, AI contributes to society numerously, for example, in the form of virtual assistants such as Google Assistant, Siri, Cortana, and Alexa.
+                        
+                        The opportunities and salaries available for AI professionals are immensely high in the world right now.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                      <h5 class="card-title">Robotic Process Automation</h5>
+                      <p class="card-text">Robotic Process Automation (RPA) is another popular and trending technology that allows us to automate business processes. RPA neither requires coding for development nor direct access to the database. It has a list of commands executed by bots under some standard set of business rules.
+
+                        Uses of RPA are as follows:
+                        
+                        Performs various tasks,
+                        Automated report generation,
+                        Emulates human actions,
+                        Audits and validates information and 
+                        Quality assurance</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <video controls>
+                        <source src="video3.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                      <h5 class="card-title">Internet of Things (IoT)</h5>
+                      <p class="card-text">Internet of Things (IoT) is a system of interrelated computing devices, objects, digital machines, animals, or people that have unique identifiers (UIDs), and this technology can transfer data over a network without human-to-human or human-to-computer interactions.
+
+                        There are many uses of the IoT technology. This trending technology is used in the processes of developing the following:
+                        
+                        Smart homes,
+                        Smartwatches,
+                        Smart cities,
+                        Connected cars and
+                        Digital health.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="card">
+                    <video controls>
+                        <source src="video4.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                      <h5 class="card-title">Augmented and Virtual Reality</h5>
+                      <p class="card-text">Augmented reality is a trending technology that can develop apps on mobile devices to blend digital components with the real world. It is used in pop-out 3D emails, text messages, photos, etc., and it also displays score overlays on telecasted sports and games.
+                        Virtual Reality is the next big thing in the world. This modern technology generates sounds, realistic images, and other sensations that will leave you in a spectacular imaginary world.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <video controls>
+                          <source src="video5.mp4" type="video/mp4">
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title">Blockchain</h5>
+                        <p class="card-text">Blockchain technology is an entirely new way of documenting data on the Internet. Sometimes, it is also referred to as the distributed ledger technology (DLT). The information recorded on Blockchain is distributed but not copied, and it can be in any form, such as ownership of something, someone’s identity, a transaction, etc.
+
+                            This upcoming and trending is the backbone of developing applications for the following:
+                            
+                            Messengers, 
+                            Voting systems,
+                            Market prediction,
+                            Storage platforms and
+                            Games.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </section>
+        
+       
+       
+        <!-- Contact-->
+        <section class="page-section" id="contact" style="background-color: darkgoldenrod;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase " style="text-align: center; color: rgb(236, 169, 24) ;">Contact Me</h2>
+                    <h3 class="section-subheading text-muted">Fill in the form for any queries:</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form>
+                    
+                      <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputEmail3" placeholder="Enter your name">
+                        </div>
+                      </div>
+
+                    <div class="row mb-3">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your email">
+                      </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Phone Number</label>
+                      <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputPassword3" placeholder="enter your phone number">
+                      </div>
+                    </div>
+                    <fieldset class="row mb-3">
+                      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Female
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                              Non-Binary
+                            </label>
+                          </div>
+                        
+                      </div>
+                    </fieldset>
+                    <div class="row mb-3">
+                      <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            Other
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="clickAlert()">Contact</button>
+                  </form>
+                  
+            </div>
+        </section>
+
+        
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.6600798865!2d77.35073573336324!3d12.954517008640543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1630433877186!5m2!1sen!2sin" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                   <br> <div class="col-lg-4 text-lg-start">Copyright @sahana</div>
+                   <br> <div class="col-lg-4 my-3 my-lg-0" style="margin-top: 10px;">
+                        
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+     
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
